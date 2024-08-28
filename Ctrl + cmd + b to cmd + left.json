@@ -1,0 +1,30 @@
+{
+  "title": "Ctrl + cmd + b to cmd + left",
+  "rules": [
+    {
+      "description": "Ctrl + cmd + b to cmd + left",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "control",
+                "command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "command"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}

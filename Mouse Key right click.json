@@ -1,0 +1,61 @@
+{
+    "title": "Mouse Key right click",
+    "rules": [
+        {
+            "description": "Mouse Key right click",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "semicolon",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "parameters": {
+                        "basic.to_if_alone_timeout_milliseconds": 250
+                    },
+                    "to": [
+                        {
+                            "set_variable": {
+                                "key_up_value": 0,
+                                "name": "personal_mouse_buttons",
+                                "value": 1
+                            }
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "semicolon"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "name": "personal_mouse_buttons",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "j",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "pointing_button": "button2"
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        }
+    ]
+}

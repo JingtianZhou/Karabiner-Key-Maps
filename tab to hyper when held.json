@@ -1,0 +1,34 @@
+{
+  "title": "tab to hyper when held",
+  "rules": [
+    {
+      "description": "Map Tab to Hyper when held",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "tab",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_command",
+              "modifiers": [
+                "left_option"
+              ]
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "tab"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}

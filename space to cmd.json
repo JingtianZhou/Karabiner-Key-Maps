@@ -9,13 +9,13 @@
                         "key_code": "spacebar"
                     },
                     "parameters": {
-                        "basic.to_if_alone_timeout_milliseconds": 250
+                        "basic.to_if_alone_timeout_milliseconds": 700
                     },
                     "to": [
                         {
                             "set_variable": {
                                 "key_up_value": 0,
-                                "name": "shift_window_buttons",
+                                "name": "space_buttons",
                                 "value": 1
                             }
                         }
@@ -30,7 +30,241 @@
                 {
                     "conditions": [
                         {
-                            "name": "shift_window_buttons",
+                            "name": "space_buttons",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "slash",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "slash",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "name": "space_buttons",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "close_bracket",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "close_bracket",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "name": "space_buttons",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "backslash",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "backslash",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "name": "space_buttons",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "open_bracket",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "open_bracket",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "name": "space_buttons",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "tab",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "tab",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "name": "space_buttons",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "grave_accent_and_tilde",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "grave_accent_and_tilde",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "name": "space_buttons",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "escape",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "grave_accent_and_tilde",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "name": "space_buttons",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "delete_or_backspace",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "delete_or_backspace",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "name": "space_buttons",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "w",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "w",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "name": "space_buttons",
                             "type": "variable_if",
                             "value": 1
                         }
@@ -56,7 +290,7 @@
                 {
                     "conditions": [
                         {
-                            "name": "shift_window_buttons",
+                            "name": "space_buttons",
                             "type": "variable_if",
                             "value": 1
                         }
@@ -82,7 +316,7 @@
                 {
                     "conditions": [
                         {
-                            "name": "shift_window_buttons",
+                            "name": "space_buttons",
                             "type": "variable_if",
                             "value": 1
                         }
@@ -108,7 +342,7 @@
                 {
                     "conditions": [
                         {
-                            "name": "shift_window_buttons",
+                            "name": "space_buttons",
                             "type": "variable_if",
                             "value": 1
                         }
@@ -134,7 +368,7 @@
                 {
                     "conditions": [
                         {
-                            "name": "shift_window_buttons",
+                            "name": "space_buttons",
                             "type": "variable_if",
                             "value": 1
                         }
@@ -160,7 +394,7 @@
                 {
                     "conditions": [
                         {
-                            "name": "shift_window_buttons",
+                            "name": "space_buttons",
                             "type": "variable_if",
                             "value": 1
                         }
@@ -186,7 +420,7 @@
                 {
                     "conditions": [
                         {
-                            "name": "shift_window_buttons",
+                            "name": "space_buttons",
                             "type": "variable_if",
                             "value": 1
                         }
@@ -212,7 +446,7 @@
                 {
                     "conditions": [
                         {
-                            "name": "shift_window_buttons",
+                            "name": "space_buttons",
                             "type": "variable_if",
                             "value": 1
                         }
@@ -238,7 +472,7 @@
                 {
                     "conditions": [
                         {
-                            "name": "shift_window_buttons",
+                            "name": "space_buttons",
                             "type": "variable_if",
                             "value": 1
                         }
@@ -264,7 +498,7 @@
                 {
                     "conditions": [
                         {
-                            "name": "shift_window_buttons",
+                            "name": "space_buttons",
                             "type": "variable_if",
                             "value": 1
                         }
@@ -290,7 +524,7 @@
                 {
                     "conditions": [
                         {
-                            "name": "shift_window_buttons",
+                            "name": "space_buttons",
                             "type": "variable_if",
                             "value": 1
                         }
@@ -316,7 +550,7 @@
                 {
                     "conditions": [
                         {
-                            "name": "shift_window_buttons",
+                            "name": "space_buttons",
                             "type": "variable_if",
                             "value": 1
                         }
@@ -342,22 +576,25 @@
                 {
                     "conditions": [
                         {
-                            "name": "shift_window_buttons",
+                            "name": "space_buttons",
                             "type": "variable_if",
                             "value": 1
                         }
                     ],
                     "from": {
-                        "key_code": "o",
+                        "key_code": "l",
                         "modifiers": {
                             "optional": [
-                                "any"
+                                "caps_lock",
+                                "shift",
+                                "control",
+                                "fn"
                             ]
                         }
                     },
                     "to": [
                         {
-                            "key_code": "o",
+                            "key_code": "l",
                             "modifiers": [
                                 "left_command"
                             ]
@@ -368,7 +605,7 @@
                 {
                     "conditions": [
                         {
-                            "name": "shift_window_buttons",
+                            "name": "space_buttons",
                             "type": "variable_if",
                             "value": 1
                         }
@@ -394,13 +631,13 @@
                 {
                     "conditions": [
                         {
-                            "name": "shift_window_buttons",
+                            "name": "space_buttons",
                             "type": "variable_if",
                             "value": 1
                         }
                     ],
                     "from": {
-                        "key_code": "escape",
+                        "key_code": "n",
                         "modifiers": {
                             "optional": [
                                 "any"
@@ -409,7 +646,317 @@
                     },
                     "to": [
                         {
-                            "key_code": "escape",
+                            "key_code": "n",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "name": "space_buttons",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "t",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "t",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "name": "space_buttons",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "o",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "o",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "name": "space_buttons",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "i",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "i",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "name": "space_buttons",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "k",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "k",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "name": "space_buttons",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "j",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "j",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "name": "space_buttons",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "f",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "f",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "name": "space_buttons",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "s",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "s",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "name": "space_buttons",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "z",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "z",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "name": "space_buttons",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "h"
+                    },
+                    "parameters": {
+                        "basic.to_if_alone_timeout_milliseconds": 250
+                    },
+                    "to": [
+                        {
+                            "key_code": "h",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "name": "space_buttons",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "v",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "v",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "name": "space_buttons",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "comma",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "comma",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "name": "space_buttons",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "c",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "c",
                             "modifiers": [
                                 "left_command"
                             ]

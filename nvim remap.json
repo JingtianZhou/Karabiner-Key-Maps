@@ -1,0 +1,32 @@
+{
+  "title": "nvim remap",
+  "rules": [
+    {
+      "description": "nvim remap",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "hyphen",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "slash",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}

@@ -1,28 +1,28 @@
 {
-  "title": "Shift windows and f1-f10",
+  "title": "Num pad",
   "rules": [
     {
-      "description": "Esc + num = f1-f12",
+      "description": "Num pad",
       "manipulators": [
         {
           "from": {
-            "key_code": "escape"
+            "key_code": "keypad_num_lock"
           },
           "parameters": {
-            "basic.to_if_alone_timeout_milliseconds": 250
+            "basic.to_if_alone_timeout_milliseconds": 2500
           },
           "to": [
             {
               "set_variable": {
                 "key_up_value": 0,
-                "name": "shift_window_buttons",
+                "name": "num_pad_buttons",
                 "value": 1
               }
             }
           ],
           "to_if_alone": [
             {
-              "key_code": "escape"
+              "key_code": "keypad_num_lock"
             }
           ],
           "type": "basic"
@@ -30,13 +30,13 @@
         {
           "conditions": [
             {
-              "name": "shift_window_buttons",
+              "name": "num_pad_buttons",
               "type": "variable_if",
               "value": 1
             }
           ],
           "from": {
-            "key_code": "1",
+            "key_code": "keypad_slash",
             "modifiers": {
               "optional": [
                 "any"
@@ -45,10 +45,7 @@
           },
           "to": [
             {
-              "key_code": "f1",
-              "modifiers": [
-                "fn"
-              ]
+              "key_code": "f7"
             }
           ],
           "type": "basic"
@@ -56,13 +53,13 @@
         {
           "conditions": [
             {
-              "name": "shift_window_buttons",
+              "name": "num_pad_buttons",
               "type": "variable_if",
               "value": 1
             }
           ],
           "from": {
-            "key_code": "2",
+            "key_code": "keypad_asterisk",
             "modifiers": {
               "optional": [
                 "any"
@@ -71,10 +68,7 @@
           },
           "to": [
             {
-              "key_code": "f2",
-              "modifiers": [
-                "fn"
-              ]
+              "key_code": "f8"
             }
           ],
           "type": "basic"
@@ -82,13 +76,13 @@
         {
           "conditions": [
             {
-              "name": "shift_window_buttons",
+              "name": "num_pad_buttons",
               "type": "variable_if",
               "value": 1
             }
           ],
           "from": {
-            "key_code": "3",
+            "key_code": "keypad_hyphen",
             "modifiers": {
               "optional": [
                 "any"
@@ -97,10 +91,7 @@
           },
           "to": [
             {
-              "key_code": "f3",
-              "modifiers": [
-                "fn"
-              ]
+              "key_code": "f9"
             }
           ],
           "type": "basic"
@@ -108,13 +99,13 @@
         {
           "conditions": [
             {
-              "name": "shift_window_buttons",
+              "name": "num_pad_buttons",
               "type": "variable_if",
               "value": 1
             }
           ],
           "from": {
-            "key_code": "4",
+            "key_code": "delete_or_backspace",
             "modifiers": {
               "optional": [
                 "any"
@@ -123,9 +114,10 @@
           },
           "to": [
             {
-              "key_code": "f4",
+              "key_code": "q",
               "modifiers": [
-                "fn"
+                "left_control",
+                "left_command"
               ]
             }
           ],
@@ -134,13 +126,14 @@
         {
           "conditions": [
             {
-              "name": "shift_window_buttons",
+              "name": "num_pad_buttons",
               "type": "variable_if",
               "value": 1
             }
           ],
+          "description": "Open softeware",
           "from": {
-            "key_code": "5",
+            "key_code": "keypad_9",
             "modifiers": {
               "optional": [
                 "any"
@@ -149,9 +142,10 @@
           },
           "to": [
             {
-              "key_code": "f5",
+              "key_code": "9",
               "modifiers": [
-                "fn"
+                "left_control",
+                "left_command"
               ]
             }
           ],
@@ -160,13 +154,14 @@
         {
           "conditions": [
             {
-              "name": "shift_window_buttons",
+              "name": "num_pad_buttons",
               "type": "variable_if",
               "value": 1
             }
           ],
+          "description": "Open softeware",
           "from": {
-            "key_code": "6",
+            "key_code": "keypad_8",
             "modifiers": {
               "optional": [
                 "any"
@@ -175,9 +170,10 @@
           },
           "to": [
             {
-              "key_code": "f6",
+              "key_code": "8",
               "modifiers": [
-                "fn"
+                "left_control",
+                "left_command"
               ]
             }
           ],
@@ -186,13 +182,14 @@
         {
           "conditions": [
             {
-              "name": "shift_window_buttons",
+              "name": "num_pad_buttons",
               "type": "variable_if",
               "value": 1
             }
           ],
+          "description": "Open softeware",
           "from": {
-            "key_code": "7",
+            "key_code": "keypad_7",
             "modifiers": {
               "optional": [
                 "any"
@@ -201,9 +198,10 @@
           },
           "to": [
             {
-              "key_code": "f7",
+              "key_code": "7",
               "modifiers": [
-                "fn"
+                "left_control",
+                "left_command"
               ]
             }
           ],
@@ -212,13 +210,14 @@
         {
           "conditions": [
             {
-              "name": "shift_window_buttons",
+              "name": "num_pad_buttons",
               "type": "variable_if",
               "value": 1
             }
           ],
+          "description": "Open softeware",
           "from": {
-            "key_code": "8",
+            "key_code": "keypad_plus",
             "modifiers": {
               "optional": [
                 "any"
@@ -227,61 +226,9 @@
           },
           "to": [
             {
-              "key_code": "f8",
+              "key_code": "spacebar",
               "modifiers": [
-                "fn"
-              ]
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "conditions": [
-            {
-              "name": "shift_window_buttons",
-              "type": "variable_if",
-              "value": 1
-            }
-          ],
-          "from": {
-            "key_code": "9",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f9",
-              "modifiers": [
-                "fn"
-              ]
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "conditions": [
-            {
-              "name": "shift_window_buttons",
-              "type": "variable_if",
-              "value": 1
-            }
-          ],
-          "from": {
-            "key_code": "0",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f10",
-              "modifiers": [
-                "fn"
+                "left_command"
               ]
             }
           ],

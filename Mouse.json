@@ -1,0 +1,81 @@
+{
+  "title": "Mouse",
+  "rules": [
+    {
+      "description": "Mouse button 5 + left buttion to option + left button",
+      "enabled": false,
+      "manipulators": [
+        {
+          "from": {
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            },
+            "pointing_button": "button5"
+          },
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 700
+          },
+          "to": [
+            {
+              "set_variable": {
+                "key_up_value": 0,
+                "name": "mouse button5 modifier",
+                "value": 1
+              }
+            }
+          ],
+          "to_if_alone": [
+            {
+              "pointing_button": "button5"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "conditions": [
+            {
+              "name": "mouse button5 modifier",
+              "type": "variable_if",
+              "value": 1
+            }
+          ],
+          "from": {
+            "pointing_button": "button1"
+          },
+          "to": [
+            {
+              "modifiers": [
+                "left_option"
+              ],
+              "pointing_button": "button1"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "conditions": [
+            {
+              "name": "mouse button5 modifier",
+              "type": "variable_if",
+              "value": 1
+            }
+          ],
+          "from": {
+            "pointing_button": "button2"
+          },
+          "to": [
+            {
+              "modifiers": [
+                "left_option"
+              ],
+              "pointing_button": "button2"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}

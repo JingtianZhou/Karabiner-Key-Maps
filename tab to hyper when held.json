@@ -5,6 +5,7 @@
       "description": "Map Tab to Hyper when held",
       "manipulators": [
         {
+          "type": "basic",
           "from": {
             "key_code": "tab",
             "modifiers": {
@@ -26,7 +27,37 @@
               "key_code": "tab"
             }
           ],
-          "type": "basic"
+          "conditions": [
+            {
+              "type": "unless",
+              "conditions": [
+                {
+                  "type": "frontmost_application_if",
+                  "bundle_identifiers": [
+                    "^com\\.apple\\.Terminal$"
+                  ]
+                },
+                {
+                  "type": "variable_if",
+                  "name": "vim_mode",
+                  "value": 1
+                }
+              ]
+            },
+            {
+              "type": "unless",
+              "bundle_identifiers": []
+            },
+            {
+              "type": "key_down_if",
+              "key_codes": [
+                "h",
+                "j",
+                "k",
+                "l"
+              ]
+            }
+          ]
         }
       ]
     }

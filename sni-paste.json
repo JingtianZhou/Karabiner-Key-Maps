@@ -1,0 +1,26 @@
+{
+  "title": "sni-paste",
+  "rules": [
+    {
+    "description": "sni-paste",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "1",
+                "modifiers": {
+                    "mandatory": ["right_command"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "f1",
+                    "modifiers": ["fn"]
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
+  ]
+}
